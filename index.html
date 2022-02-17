@@ -379,14 +379,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-box">            
+            <div class="footer-box">
                 <form name="signup-form">
                     <label>
                         <span class="footer-sign-up-call">Подпишитесь на рассылку</span>
                         <input type="email" name="email" class="sign-up-input" placeholder="E-mail"/>
                     </label>
-                    <button type="submit" class="btn main-button sign-up-button">Подписаться</button>
+                    <button type="submit" class="btn main-button sign-up-button">
+                        <span>Подписаться</span>                    
+                        <svg class="sign-up-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
+                
             </div>            
         </div>
     </footer>

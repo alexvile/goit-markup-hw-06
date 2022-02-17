@@ -477,11 +477,16 @@ p {
 .sign-up-input::placeholder {
   color: var(--semitransparent-white-color);
 }
-.sign-up-button {
-  padding: 10px 28px 10px 29px;
-}
 .footer-sign-up-call {
   display: block;
+}
+.sign-up-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px 10px 29px;
+}
+.sign-up-icon {
+  margin-left: 10px;
 }
 /* ------------------Portfolio PAGE------------------*/
 
