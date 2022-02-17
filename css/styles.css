@@ -414,6 +414,9 @@ p {
 .footer-box:first-child {
   margin-right: 70px;
 }
+.footer-box:nth-child(2) {
+  margin-right: 93px;
+}
 .contacts-f {
   font-size: 14px;
   line-height: 1.71;
