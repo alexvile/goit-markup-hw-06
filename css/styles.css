@@ -206,8 +206,8 @@ p {
   transition: opacity 250ms var(--main-animation);
 }
 .backdrop.is-hidden {
-  pointer-events: none;
   /* visibility: hidden; */
+  pointer-events: none;
   opacity: 0;
 }
 .backdrop.is-hidden .modal {
@@ -218,7 +218,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
+  min-height: 581px;
   width: 528px;
   padding: 40px 39px 40px 41px;
   border-radius: 4px;
@@ -258,12 +258,20 @@ p {
   fill: currentColor;
 }
 .modal-call {
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 .form-field {
+  position: relative;
   display: block;
-  text-align: left;
-  margin-bottom: 10px;
+}
+.form-field:not(:last-child) {
+  margin-bottom: 28px;
+}
+.form-label {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  transform: translateY(-100%);
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -278,8 +286,16 @@ p {
   color: var(--title-text-color);
 }
 .form-input {
-  margin-top: 4px;
   padding: 12px 42px;
+}
+.form-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.form-input:focus + .form-input-icon {
+  fill: var(--accent-color);
 }
 .form-input:focus,
 .form-feedback:focus {
@@ -314,6 +330,7 @@ p {
   color: var(--accent-color);
 }
 .form-button {
+  display: inline-block;
   padding: 10px 55px 10px 56px;
 }
 /* Features section */
