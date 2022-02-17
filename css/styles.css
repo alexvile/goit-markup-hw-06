@@ -320,11 +320,29 @@ p {
   color: rgba(117, 117, 117, 0.5);
 }
 .form-policy {
+  position: relative;
   display: block;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
+}
+.checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}
+.policy-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.policy-checkbox:checked ~ .checkbox-icon {
+  background-color: var(--accent-color);
+  border: none;
 }
 .policy-agreement {
   color: var(--accent-color);
