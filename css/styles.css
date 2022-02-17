@@ -237,9 +237,17 @@ p {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  color: #000;
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+.close-button:focus,
+.close-button:hover {
+  color: var(--button-color);
+}
+.close-icon {
+  fill: currentColor;
 }
 /* Features section */
 
