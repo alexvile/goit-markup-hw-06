@@ -249,6 +249,7 @@ p {
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: color 250ms var(--main-animation);
 }
 .close-button:focus,
 .close-button:hover {
@@ -284,6 +285,7 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: var(--title-text-color);
+  transition: border 250ms var(--main-animation);
 }
 .form-input {
   padding: 12px 42px;
@@ -293,6 +295,7 @@ p {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms var(--main-animation);
 }
 .form-input:focus + .form-input-icon {
   fill: var(--accent-color);
