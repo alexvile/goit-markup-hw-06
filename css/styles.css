@@ -299,8 +299,8 @@ p {
 }
 .form-input:focus,
 .form-feedback:focus {
-  border: none;
-  outline: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+  outline: white; /* скрывает outline */
 }
 .form-feedback,
 .form-feedback::placeholder,
@@ -587,9 +587,7 @@ p {
 .sign-up-input::placeholder {
   color: var(--semitransparent-white-color);
 }
-.footer-sign-up-call {
-  display: block;
-}
+
 .sign-up-button {
   display: inline-flex;
   align-items: center;
